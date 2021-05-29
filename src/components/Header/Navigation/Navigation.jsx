@@ -15,10 +15,6 @@ function Navigation() {
       url: '/news/'
     },
     {
-      label: 'EVENTS',
-      url: '/events/'
-    },
-    {
       label: 'MUSIC',
       url: '/music/'
     },
@@ -29,9 +25,9 @@ function Navigation() {
   ];
   
   return (
-    <div>
+    <div className="navigation">
       {navigationItems.map((navItem, i) => (
-        <Link to={navItem.url} className={`nav-item ${path === navItem.url ? "active" : ""}`}>{navItem.label}</Link>
+        <Link to={navItem.url} className={`nav-item ${path === navItem.url ? "active" : ""}`} key={i}>{navItem.label}</Link>
       ))}
     </div>
   );

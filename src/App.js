@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Footer } from './components';
+import { Header, Footer, Home, Music, Contact, News } from './components';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 function App() {
@@ -7,21 +7,10 @@ function App() {
     <Router>
       <div className="app">
         <Header/>
-        <Route exact path="/" render={() => (
-          <h1>Home</h1>
-        )}/>
-        <Route exact path="/news/" render={() => (
-          <h1>News</h1>
-        )}/>
-        <Route exact path="/events/" render={() => (
-          <h1>Events</h1>
-        )}/>
-        <Route exact path="/music/" render={() => (
-          <h1>Music</h1>
-        )}/>
-        <Route exact path="/contact/" render={() => (
-          <h1>Contact</h1>
-        )}/>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/news/" component={News} />
+        <Route exact path="/music/" component={Music} />
+        <Route exact path="/contact/" component={Contact} />
         <Footer/>
       </div>
     </Router>
