@@ -1,14 +1,38 @@
 import './navigation.css';
-import { Route, Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navigation() {
+  const location = useLocation();
+  const path = location.pathname;
+
+  const navigationItems = [
+    {
+      label: 'HOME',
+      url: '/'
+    },
+    {
+      label: 'NEWS',
+      url: '/news/'
+    },
+    {
+      label: 'EVENTS',
+      url: '/events/'
+    },
+    {
+      label: 'MUSIC',
+      url: '/music/'
+    },
+    {
+      label: 'CONTACT',
+      url: '/contact/'
+    },
+  ];
+  
   return (
     <div>
-      <Link to={`/`}>Home</Link>
-      <Link to={`/news/`}>News</Link>
-      <Link to={`/events/`}>Events</Link>
-      <Link to={`/music/`}>Music</Link>
-      <Link to={`/contact/`}>Contact</Link>
+      {navigationItems.map((navItem, i) => (
+        <Link to={navItem.url} className={`nav-item ${path === navItem.url ? "active" : ""}`}>{navItem.label}</Link>
+      ))}
     </div>
   );
 }

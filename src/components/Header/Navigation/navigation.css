@@ -2,3 +2,15 @@
   color: white;
   text-align: center;
 }
+
+.nav-item {
+  color: #aaaaaa;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.4s ease;
+}
+
+.nav-item:hover,
+.active {
+  color: white;
+}
