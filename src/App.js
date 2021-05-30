@@ -7,10 +7,12 @@ function App() {
     <Router>
       <div className="app">
         <Header/>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/news/" component={News} />
-        <Route exact path="/music/" component={Music} />
-        <Route exact path="/contact/" component={Contact} />
+        <div className="page">
+          <Route exact path="/" component={Home} />
+          <Route exact path="/news/" component={News} />
+          <Route exact path="/music/" component={Music} />
+          <Route exact path="/contact/" component={Contact} />
+        </div>
         <Footer/>
       </div>
     </Router>
