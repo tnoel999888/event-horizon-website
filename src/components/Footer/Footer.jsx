@@ -52,7 +52,7 @@ function Footer() {
             onMouseLeave={() => updateSocial(i, { hovering: false })} 
             className={social.className}
           >
-            <SocialIcon url={social.url} fgColor={!socials[i].hovering ? "#848484" : "white"} bgColor={!socials[i].hovering ? "black" : null} />
+            <SocialIcon url={social.url} fgColor={!socials[i].hovering ? "#848484" : "#ffffff"} bgColor={!socials[i].hovering ? "#000000" : null} />
           </div>
         ))}
       </div>

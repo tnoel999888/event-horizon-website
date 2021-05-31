@@ -43,10 +43,10 @@ const songs = [
   },
   {
     id: 965001367,
-    songTitle: "Event Horizon & Shahay - Beat Rider",
     channelUrl: "https://soundcloud.com/inrotationrecs/",
     channelTitle: "IN / ROTATION",
-    songUrl: "https://soundcloud.com/inrotationrecs/event-horizon-shahay-beat"
+    songUrl: "https://soundcloud.com/inrotationrecs/event-horizon-shahay-beat",
+    songTitle: "Event Horizon & Shahay - Beat Rider",
   },
   {
     id: 832408972,
@@ -130,7 +130,7 @@ const songs = [
     channelUrl: "https://soundcloud.com/gassedbristol/",
     channelTitle: "Gassed Bass",
     songUrl: "https://soundcloud.com/gassedbristol/event-horizon-scratch-free-download",
-    songTitle: "Event Horizon - Scratch [Free Download]",
+    songTitle: "Event Horizon - Scratch",
   },
   {
     id: 556973970,
@@ -151,7 +151,7 @@ const songs = [
     channelUrl: "https://soundcloud.com/brokensyndicate/",
     channelTitle: "BRØKEN",
     songUrl: "https://soundcloud.com/brokensyndicate/bkn038-event-horizon-tenang-ascent",
-    songTitle: "EVENT HORIZON | TENANG ASCENT",
+    songTitle: "Event Horizon - Tenang Ascent",
   },
   {
     id: 448156434,
@@ -172,21 +172,21 @@ const songs = [
     channelUrl: "https://soundcloud.com/event_horizonmusic/",
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-x-foundry-abomination-1",
-    songTitle: "Event Horizon x Foundry - Abomination [Free Download]",
+    songTitle: "Event Horizon & Foundry - Abomination",
   },
   {
     id: 389935290,
     channelUrl: "https://soundcloud.com/articulate-sound/",
     channelTitle: "Articulate Sound",
     songUrl: "https://soundcloud.com/articulate-sound/event-horizon-flying-saucers-1",
-    songTitle: "Event Horizon - Flying Saucers [FREE DOWNLOAD]",
+    songTitle: "Event Horizon - Flying Saucers",
   },
   {
     id: 366337844,
     channelUrl: "https://soundcloud.com/gassedbristol/",
     channelTitle: "Gassed Bass",
     songUrl: "https://soundcloud.com/gassedbristol/event-horizon-doesnt-matter-free-download",
-    songTitle: "Event Horizon - Doesn't Matter [Free Download]",
+    songTitle: "Event Horizon - Doesn't Matter",
   },
   {
     id: 345927581,
@@ -200,21 +200,21 @@ const songs = [
     channelUrl: "https://soundcloud.com/crucast/",
     channelTitle: "CRUCAST",
     songUrl: "https://soundcloud.com/crucast/future-mask-off-event-horizon-remix",
-    songTitle: "Mask Off (Event Horizon Remix)",
+    songTitle: "Future - Mask Off (Event Horizon Remix)",
   },
   {
     id: 327847012,
     channelUrl: "https://soundcloud.com/packlondon/",
     channelTitle: "Pack London",
     songUrl: "https://soundcloud.com/packlondon/event-horizon-voices-free-download",
-    songTitle: "Event Horizon - Voices (Free Download)",
+    songTitle: "Event Horizon - Voices",
   },
   {
     id: 325384914,
     channelUrl: "https://soundcloud.com/projectalloutrecords/",
     channelTitle: "Project Allout Records",
     songUrl: "https://soundcloud.com/projectalloutrecords/event-horizon-wrong-turn-lengerz-3",
-    songTitle: "Event Horizon - Wrong Turn (LENGERZ 3)",
+    songTitle: "Event Horizon - Wrong Turn",
   },
   {
     id: 324633906,
@@ -228,7 +228,7 @@ const songs = [
     channelUrl: "https://soundcloud.com/3000bass/",
     channelTitle: "3000 BASS",
     songUrl: "https://soundcloud.com/3000bass/event-horizon-kamikaze-free-download",
-    songTitle: "Event Horizon - Kamikaze [Free Download]",
+    songTitle: "Event Horizon - Kamikaze",
   },
   {
     id: 282450092,
