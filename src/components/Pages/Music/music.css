@@ -3,7 +3,8 @@
 }
 
 .song {
-  margin-bottom: 18px;
+  margin: 9px;
+  display: inline-block;
 }
 
 .song-details {
