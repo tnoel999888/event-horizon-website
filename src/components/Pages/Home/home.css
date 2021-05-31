@@ -1,7 +1,21 @@
-.carousel-img {
-  width: 100%;
-  height: 650px;
-  object-fit: cover;
+.press-shot-1 {
+  background: url('../../../assets/press-shot-1.jpg') 63% 39%;
+}
+
+.press-shot-3 {
+  background: url('../../../assets/press-shot-3.jpg') 56% 50%;
+}
+
+.press-shot-4 {
+  background: url('../../../assets/press-shot-4.jpg') 54% 39%;
+}
+
+.press-shot-1,
+.press-shot-2,
+.press-shot-3,
+.press-shot-4 {
+  min-height: 650px;
+  background-size: cover;
 }
 
 .carousel {
