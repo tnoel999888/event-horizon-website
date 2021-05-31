@@ -22,7 +22,7 @@ function Home() {
         <div className="press-shot-4" />
         <Carousel.Caption>
           <h3>Support From:</h3>
-          <p>My Nu Leng, AC Slater, Phlegmatic Dogs, Matroda, Bleu Clair, Holy Goof, Notion, Skepsis, Darkzy + more.</p>
+          <p>My Nu Leng, AC Slater, Phlegmatic Dogs, Matroda, Bleu Clair, Holy Goof, Notion, Skepsis, Darkzy, TS7, Shapes + more.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel> 
