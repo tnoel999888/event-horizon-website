@@ -9,4 +9,6 @@
 .instagram,
 .facebook {
   display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }

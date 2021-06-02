@@ -13,12 +13,12 @@
 .press-shot-1,
 .press-shot-3,
 .press-shot-4 {
-  min-height: 650px;
+  min-height: 900px;
   background-size: cover;
 }
 
 .carousel {
   width: 80%;
-  height: 650px;
+  height: 900px;
   margin: auto;
 }
