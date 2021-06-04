@@ -140,6 +140,13 @@ const songs = [
     songTitle: "Event Horizon - The Invasion",
   },
   {
+    id: 516115878,
+    channelUrl: "https://soundcloud.com/openoutlets/",
+    channelTitle: "Open Outlets",
+    songUrl: "https://soundcloud.com/openoutlets/event-horizon-go",
+    songTitle: "Event Horizon - Go",
+  },
+  {
     id: 501194928,
     channelUrl: "https://soundcloud.com/saucyonline/",
     channelTitle: "Saucy",
