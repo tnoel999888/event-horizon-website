@@ -1,6 +1,44 @@
 .contact {
+  width: 50%;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email-status-msg__hide,
+.email-status-msg {
+  color: #848484;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.email-status-msg__hide {
+  visibility: hidden;
+}
+
+.email-and-form {
+  max-width: 500px;
+  min-width: 300px;
+  width: inherit;
   margin: auto;
-  width: 80%;
+}
+
+.spinner {
+  margin-left: 8px;
+  vertical-align: baseline;
+}
+
+.form-instruction {
+  color: #848484;
+}
+
+.form-label {
+  float: left;
+}
+
+.title-and-email {
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 
 .title {
@@ -15,13 +53,11 @@
   color: #848484;
 }
 
-.title-and-email {
-  margin-bottom: 48px;
-}
-
 .press-shot-2 {
   max-height: 900px;
-  max-width: 600px;
+  max-width: 500px;
+  min-width: 300px;
   height: inherit;
   width: inherit;
+  margin: auto;
 }
