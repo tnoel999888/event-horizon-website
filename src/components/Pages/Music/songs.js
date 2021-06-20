@@ -1,5 +1,12 @@
 const songs = [
   {
+    id: 1070615458,
+    channelUrl: "https://soundcloud.com/monstercat",
+    channelTitle: "Monstercat",
+    songUrl: "https://soundcloud.com/monstercat/drinks-on-me-event-horizon-high-caliber",
+    songTitle: "Drinks On Me & Event Horizon - High Caliber",
+  },
+  {
     id: 1030774990,
     channelUrl: "https://soundcloud.com/thearchives_uk",
     channelTitle: "The Archives",
