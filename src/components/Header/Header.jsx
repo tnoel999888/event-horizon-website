@@ -1,6 +1,7 @@
-import './header.css';
-import Navigation from './Navigation';
-import Logo from './Logo';
+import "./header.css";
+import React from "react";
+import Navigation from "./Navigation";
+import Logo from "./Logo";
 
 function Header() {
   return (

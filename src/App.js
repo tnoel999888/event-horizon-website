@@ -1,35 +1,38 @@
-import './App.css';
-import { Header, Footer, Home, Music, Contact, News } from './components';
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  Header, Footer, Home, Music, Contact, News,
+} from "./components";
 
 const navigation = [
   {
     path: "/",
-    component: Home
+    component: Home,
   },
   {
     path: "/news/",
-    component: News
+    component: News,
   },
   {
     path: "/music/",
-    component: Music
+    component: Music,
   },
   {
     path: "/contact/",
-    component: Contact
+    component: Contact,
   },
-]
+];
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <Header/>
+        <Header />
         <div className="page">
-          {navigation.map(nav => <Route exact path={nav.path} component={nav.component} />)}
+          {navigation.map((nav) => <Route exact path={nav.path} component={nav.component} />)}
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
