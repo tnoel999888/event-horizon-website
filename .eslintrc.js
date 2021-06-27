@@ -39,6 +39,7 @@ module.exports = {
       files: ["*.js"],
       rules: {
         "no-alert": "off",
+        "no-useless-escape": "off",
       },
     },
   ],
