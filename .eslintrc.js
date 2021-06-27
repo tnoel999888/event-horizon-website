@@ -22,6 +22,7 @@ module.exports = {
     semi: ["error", "always"],
     quotes: ["error", "double"],
     indent: ["error", 2],
+    "max-len": "warn",
     "no-multi-spaces": ["error"],
     "jsx-a11y/label-has-associated-control": ["error", {
       required: {

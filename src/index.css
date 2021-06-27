@@ -18,4 +18,5 @@ html, body, #root {
 
 html {
   overflow-y: scroll;
+  background-color: black;
 }
