@@ -21,9 +21,14 @@ module.exports = {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     semi: ["error", "always"],
     quotes: ["error", "double"],
+    "linebreak-style": "off",
     indent: ["error", 2],
+    "no-unused-vars": 1,
+    "jsx-a11y/mouse-events-have-key-events": 1,
     "max-len": "warn",
     "no-multi-spaces": ["error"],
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
     "jsx-a11y/label-has-associated-control": ["error", {
       required: {
         some: ["nesting", "id"],

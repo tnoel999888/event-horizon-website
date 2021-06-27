@@ -37,7 +37,7 @@
   transition: opacity 0.3s ease;
   overflow: hidden;
   text-overflow: ellipsis;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
