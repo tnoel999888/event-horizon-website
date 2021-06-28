@@ -20,10 +20,11 @@ module.exports = {
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     semi: ["error", "always"],
-    quotes: ["error", "double"],
+    quotes: ["warn", "double"],
     "linebreak-style": "off",
     indent: ["error", 2],
     "no-unused-vars": 1,
+    "no-alert": "off",
     "jsx-a11y/mouse-events-have-key-events": 1,
     "max-len": "warn",
     "no-multi-spaces": ["error"],

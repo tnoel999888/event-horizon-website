@@ -30,7 +30,16 @@ function App() {
       <div className="app">
         <Header />
         <div className="page">
-          {navigation.map((nav) => <Route exact path={nav.path} component={nav.component} />)}
+          {navigation.map(
+            (nav) => (
+              <Route
+                exact
+                key={nav.path}
+                path={nav.path}
+                component={nav.component}
+              />
+            ),
+          )}
         </div>
         <Footer />
       </div>
