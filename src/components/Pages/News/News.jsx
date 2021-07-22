@@ -3,25 +3,40 @@ import "./news.css";
 import { getMediaIcon, getMediaAlt } from "./consts";
 import fetchInstaFeed from "../../../api/instagram";
 
-async function getInstaData() {
-  const data = await fetchInstaFeed();
-  const dataJson = JSON.parse(data).json;
-  const dataObj = JSON.parse(dataJson);
-  return dataObj.data;
-}
-
 function News() {
   const [hoverCaption, setHoverCaption] = useState("");
   const [hoverIndex, setHoverIndex] = useState(null);
-  const [mediaData, setMediaData] = useState(null);
+  const [mediaData, setMediaData] = useState([]);
+  const [afterQueryParam, setAfterQueryParam] = useState("");
+  const [showMoreButtonVisible, setShowMoreButtonVisible] = useState(true);
+  const [dataLoading, setDataLoading] = useState(true);
+
+  async function getInstaData() {
+    setDataLoading(true);
+    const data = await fetchInstaFeed(afterQueryParam);
+    const dataJson = JSON.parse(data).json;
+    const dataObj = JSON.parse(dataJson);
+    const newMediaData = [...mediaData].concat(dataObj.data);
+    setMediaData(newMediaData);
+    setDataLoading(false);
+
+    const { next } = dataObj.paging;
+
+    if (next) {
+      const nextQueryString = next.substring(next.indexOf("&"));
+      const nextQueryParams = new URLSearchParams(nextQueryString);
+      const after = nextQueryParams.get("after");
+      setAfterQueryParam(after);
+    } else {
+      setShowMoreButtonVisible(false);
+    }
+  }
 
   useEffect(async () => {
-    const data = await getInstaData();
-    setMediaData(data);
+    getInstaData();
 
     const interval = setInterval(async () => {
-      const newData = await getInstaData();
-      setMediaData(newData);
+      getInstaData();
     }, 60000);
 
     return () => clearInterval(interval);
@@ -61,6 +76,7 @@ function News() {
           </a>
         );
       })}
+      {showMoreButtonVisible && <div className="button-container"><button type="button" className="btn btn-primary" onClick={() => getInstaData()}>{dataLoading ? "Loading" : "Show more"}</button></div>}
     </h1>
   );
 }
