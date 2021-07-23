@@ -61,3 +61,8 @@
   width: inherit;
   margin: auto;
 }
+
+.sending-label {
+  display: inline-block;
+  margin-right: 8px;
+}

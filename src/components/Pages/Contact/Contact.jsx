@@ -1,25 +1,50 @@
 import "./contact.css";
 import React, { useState, useEffect } from "react";
-import { Spinner } from "react-bootstrap";
+import { CircularProgress } from "@material-ui/core";
 import PressShot2 from "../../../assets/press-shot-2.jpg";
-
-const EMAIL_STATUS = {
-  SUBMIT: {
-    key: "SUBMIT",
-    text: "Submit",
-  },
-  SENDING: {
-    key: "SENDING",
-    text: "Sending",
-  },
-};
 
 function Contact() {
   const initialFormDetails = { name: "", email: "", message: "" };
   const [formDetails, setFormDetails] = useState(initialFormDetails);
   const [formValid, setFormValid] = useState(false);
-  const [emailStatus, setEmailStatus] = useState(EMAIL_STATUS.SUBMIT.key);
+  const [emailStatus, setEmailStatus] = useState("SUBMIT");
   const updateFormDetails = (key, value) => setFormDetails({ ...formDetails, [key]: value });
+
+  const EMAIL_STATUS = {
+    SUBMIT: {
+      key: "SUBMIT",
+      text: "Submit",
+      render: () => (
+        <button
+          type="submit"
+          className="btn btn-primary"
+          disabled={!formValid || emailStatus === EMAIL_STATUS.SENDING.key}
+        >
+          Submit
+        </button>
+      ),
+    },
+    SENDING: {
+      key: "SENDING",
+      text: "Sending",
+      render: () => (
+        <div>
+          <p className="sending-label">Sending...</p>
+          <CircularProgress size="1rem" />
+        </div>
+      ),
+    },
+    SENT: {
+      key: "SENT",
+      text: "Sent!",
+      render: () => <p>{EMAIL_STATUS.SENT.text}</p>,
+    },
+    FAILED: {
+      key: "FAILED",
+      text: "Email Failed to send",
+      render: () => <p>{EMAIL_STATUS.FAILED.text}</p>,
+    },
+  };
 
   function resetForm() {
     setFormDetails(initialFormDetails);
@@ -41,10 +66,10 @@ function Contact() {
     ).then((response) => {
       setEmailStatus(EMAIL_STATUS.SUBMIT.key);
       if (response.status === "success") {
-        alert("Email sent successfully!");
+        setEmailStatus(EMAIL_STATUS.SENT.key);
         resetForm();
       } else if (response.status === "fail") {
-        alert("Email failed to send.");
+        setEmailStatus(EMAIL_STATUS.FAILED.key);
       }
     });
   }
@@ -118,24 +143,7 @@ function Contact() {
             />
           </div>
 
-          <button
-            type="submit"
-            className="btn btn-primary"
-            disabled={!formValid || emailStatus === EMAIL_STATUS.SENDING.key}
-          >
-            { EMAIL_STATUS[emailStatus].text }
-            {emailStatus === EMAIL_STATUS.SENDING.key
-              && (
-                <Spinner
-                  className="spinner"
-                  as="span"
-                  animation="border"
-                  size="sm"
-                  role="status"
-                  aria-hidden="true"
-                />
-              )}
-          </button>
+          { EMAIL_STATUS[emailStatus].render() }
         </form>
       </div>
     </div>
