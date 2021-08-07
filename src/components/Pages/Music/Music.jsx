@@ -15,8 +15,8 @@ function Music() {
             { playClicked === index ? (
               <iframe
                 title={song.songTitle}
-                width="300"
-                height="300"
+                width="293"
+                height="293"
                 scrolling="no"
                 frameBorder="no"
                 allow="autoplay"
