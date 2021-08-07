@@ -5,12 +5,8 @@
 }
 
 .song {
-<<<<<<< HEAD
   margin: 14px;
   float: left;
-=======
-  display: inline-block;
->>>>>>> 3389311 (Adding rest of the artworkUrls. Fixing styling.)
 }
 
 .song-details {
