@@ -45,38 +45,40 @@ function News() {
 
   return (
     <div className="news">
-      {mediaData && mediaData.map((mediaItem, index) => {
-        const itemIsHovered = index === hoverIndex;
-        const {
-          caption,
-          permalink,
-          media_type: mediaType,
-          thumbnail_url: thumbnailUrl,
-          media_url: mediaUrl,
-        } = mediaItem;
-        const mediaIcon = getMediaIcon(mediaType);
-        const mediaAlt = getMediaAlt(mediaType);
+      <div className="feed">
+        {mediaData && mediaData.map((mediaItem, index) => {
+          const itemIsHovered = index === hoverIndex;
+          const {
+            caption,
+            permalink,
+            media_type: mediaType,
+            thumbnail_url: thumbnailUrl,
+            media_url: mediaUrl,
+          } = mediaItem;
+          const mediaIcon = getMediaIcon(mediaType);
+          const mediaAlt = getMediaAlt(mediaType);
 
-        return (
-          <a
-            key={permalink}
-            href={permalink}
-            className="insta-media-container"
-            onMouseEnter={() => {
-              setHoverCaption(caption);
-              setHoverIndex(index);
-            }}
-            onMouseLeave={() => setHoverIndex(-1)}
-          >
-            { itemIsHovered && <div className="insta-media-caption">{hoverCaption}</div> }
-            { mediaIcon && <img src={mediaIcon} alt={mediaAlt} className="insta-media-icon" /> }
-            <div
-              className="insta-media-img"
-              style={{ backgroundImage: `url(${thumbnailUrl || mediaUrl})` }}
-            />
-          </a>
-        );
-      })}
+          return (
+            <a
+              key={permalink}
+              href={permalink}
+              className="insta-media-container"
+              onMouseEnter={() => {
+                setHoverCaption(caption);
+                setHoverIndex(index);
+              }}
+              onMouseLeave={() => setHoverIndex(-1)}
+            >
+              { itemIsHovered && <div className="insta-media-caption">{hoverCaption}</div> }
+              { mediaIcon && <img src={mediaIcon} alt={mediaAlt} className="insta-media-icon" /> }
+              <div
+                className="insta-media-img"
+                style={{ backgroundImage: `url(${thumbnailUrl || mediaUrl})` }}
+              />
+            </a>
+          );
+        })}
+      </div>
       <div className="load-more-and-loading-spinner-container">
         { showMoreButtonVisible && !dataLoading && (
           <div className="load-more-btn">

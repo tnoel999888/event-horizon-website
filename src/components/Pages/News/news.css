@@ -1,11 +1,11 @@
 .news {
-  max-width: 1605px;
+  max-width: 1640px;
   margin: auto;
 }
 
 .insta-media-container {
-  width: 293px;
-  height: 293px;
+  width: 300px;
+  height: 300px;
   margin: 14px;
   position: relative;
   z-index: 10;
