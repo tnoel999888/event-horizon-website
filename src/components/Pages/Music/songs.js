@@ -5,6 +5,7 @@ const songs = [
     channelTitle: "Monstercat",
     songUrl: "https://soundcloud.com/monstercat/drinks-on-me-event-horizon-high-caliber",
     songTitle: "Drinks On Me & Event Horizon - High Caliber",
+    artworkUrl: "https://i1.sndcdn.com/artworks-tJE2NkFRNVB3xJ39-XtwXCg-t500x500.jpg",
   },
   {
     id: 1030774990,
@@ -12,6 +13,7 @@ const songs = [
     channelTitle: "The Archives",
     songUrl: "https://soundcloud.com/thearchives_uk/event-horizon-ptsd",
     songTitle: "Event Horizon - PTSD",
+    artworkUrl: "https://i1.sndcdn.com/artworks-jNFK4hinDJuVs6jB-15BMQg-t500x500.jpg",
   },
   {
     id: 991349737,
