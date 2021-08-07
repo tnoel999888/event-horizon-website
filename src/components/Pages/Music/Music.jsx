@@ -11,7 +11,6 @@ function Music() {
           <div className="song-details">
             <a href={song.songUrl} className="artist-and-song-name" title={song.songTitle} target="_blank" rel="noreferrer">{song.songTitle}</a>
           </div>
-          <br />
         </div>
       ))}
     </div>

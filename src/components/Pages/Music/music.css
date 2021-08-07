@@ -1,10 +1,12 @@
 .music {
   margin-top: 24px;
+  max-width: 1640px;
+  margin: auto;
 }
 
 .song {
   margin: 14px;
-  display: inline-block;
+  float: left;
 }
 
 .song-details {
