@@ -1,5 +1,21 @@
 const songs = [
   {
+    id: 1099213801,
+    channelUrl: "https://soundcloud.com/event_horizonmusic",
+    channelTitle: "Event Horizon",
+    songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-ghostly-feat-mro",
+    songTitle: "Event Horizon - Ghostly (ft. MRo)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-Dmczio0ZhEuasSza-wHLd9w-t500x500.jpg",
+  },
+  {
+    id: 1099215763,
+    channelUrl: "https://soundcloud.com/event_horizonmusic",
+    channelTitle: "Event Horizon",
+    songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-street-talk-featdread-mc",
+    songTitle: "Event Horizon - Street Talk (ft. Dread MC)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-Dmczio0ZhEuasSza-wHLd9w-t500x500.jpg",
+  },
+  {
     id: 1070615458,
     channelUrl: "https://soundcloud.com/monstercat",
     channelTitle: "Monstercat",

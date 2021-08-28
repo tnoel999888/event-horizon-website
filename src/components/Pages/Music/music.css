@@ -1,9 +1,14 @@
 .music {
   margin-top: 24px;
+  max-width: 1640px;
+  margin: auto;
 }
 
 .song {
-  display: inline-block;
+  width: 300px;
+  height: 320px;
+  margin: 14px;
+  float: left;
 }
 
 .song-details {
@@ -15,6 +20,7 @@
   text-overflow: ellipsis; 
   font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
   font-weight: 100;
+  margin-top: 10px;
 }
 
 .channel-name {
@@ -34,7 +40,6 @@
 .song-media-container {
   width: 293px;
   height: 293px;
-  margin: 14px;
   display: inline-block;
   position: relative;
 }
@@ -51,8 +56,8 @@
 .song-media-play-button {
   position: relative;
   display: inline-block;
-  min-width: 43px;
-  min-height: 43px;
+  width: 43px;
+  height: 43px;
   margin: 0;
   padding: 0;
   vertical-align: middle;
@@ -120,10 +125,9 @@
 }
 
 .song-media-channel-and-song-name {
-  /* float: right; */
   overflow: hidden;
   flex-grow: 1;
-  fex-shrink: 1;
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
