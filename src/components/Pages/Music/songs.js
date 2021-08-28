@@ -1,10 +1,27 @@
 const songs = [
   {
+    id: 1099213801,
+    channelUrl: "https://soundcloud.com/event_horizonmusic",
+    channelTitle: "Event Horizon",
+    songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-ghostly-feat-mro",
+    songTitle: "Event Horizon - Ghostly (ft. MRo)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-Dmczio0ZhEuasSza-wHLd9w-t500x500.jpg",
+  },
+  {
+    id: 1099215763,
+    channelUrl: "https://soundcloud.com/event_horizonmusic",
+    channelTitle: "Event Horizon",
+    songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-street-talk-featdread-mc",
+    songTitle: "Event Horizon - Street Talk (ft. Dread MC)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-Dmczio0ZhEuasSza-wHLd9w-t500x500.jpg",
+  },
+  {
     id: 1070615458,
     channelUrl: "https://soundcloud.com/monstercat",
     channelTitle: "Monstercat",
     songUrl: "https://soundcloud.com/monstercat/drinks-on-me-event-horizon-high-caliber",
     songTitle: "Drinks On Me & Event Horizon - High Caliber",
+    artworkUrl: "https://i1.sndcdn.com/artworks-tJE2NkFRNVB3xJ39-XtwXCg-t500x500.jpg",
   },
   {
     id: 1030774990,
@@ -12,6 +29,7 @@ const songs = [
     channelTitle: "The Archives",
     songUrl: "https://soundcloud.com/thearchives_uk/event-horizon-ptsd",
     songTitle: "Event Horizon - PTSD",
+    artworkUrl: "https://i1.sndcdn.com/artworks-jNFK4hinDJuVs6jB-15BMQg-t500x500.jpg",
   },
   {
     id: 991349737,
@@ -19,6 +37,7 @@ const songs = [
     channelTitle: "Night Bass",
     songUrl: "https://soundcloud.com/nightbassrecords/event-horizon-swindler",
     songTitle: "Event Horizon - Swindler",
+    artworkUrl: "https://i1.sndcdn.com/artworks-z7jWCLNyxoKTTP7y-C3mksA-t500x500.jpg",
   },
   {
     id: 991351594,
@@ -26,6 +45,7 @@ const songs = [
     channelTitle: "Night Bass",
     songUrl: "https://soundcloud.com/nightbassrecords/event-horizon-crutch",
     songTitle: "Event Horizon - Crutch",
+    artworkUrl: "https://i1.sndcdn.com/artworks-z7jWCLNyxoKTTP7y-C3mksA-t500x500.jpg",
   },
   {
     id: 991352830,
@@ -33,6 +53,7 @@ const songs = [
     channelTitle: "Night Bass",
     songUrl: "https://soundcloud.com/nightbassrecords/event-horizon-area-code-ft-pvc",
     songTitle: "Event Horizon - Area Code (ft.PVC)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-z7jWCLNyxoKTTP7y-C3mksA-t500x500.jpg",
   },
   {
     id: 991354150,
@@ -40,6 +61,7 @@ const songs = [
     channelTitle: "Night Bass",
     songUrl: "https://soundcloud.com/nightbassrecords/event-horizon-intentions",
     songTitle: "Event Horizon - Intentions",
+    artworkUrl: "https://i1.sndcdn.com/artworks-z7jWCLNyxoKTTP7y-C3mksA-t500x500.jpg",
   },
   {
     id: 979662016,
@@ -47,6 +69,7 @@ const songs = [
     channelTitle: "Maraki Records",
     songUrl: "https://soundcloud.com/marakirecords/event-horizon-papps-cognitive",
     songTitle: "Event Horizon & Papps - Cognitive",
+    artworkUrl: "https://i1.sndcdn.com/artworks-gt0PGGRJuyMDzcTt-hpnZMg-t500x500.jpg",
   },
   {
     id: 965001367,
@@ -54,6 +77,7 @@ const songs = [
     channelTitle: "IN / ROTATION",
     songUrl: "https://soundcloud.com/inrotationrecs/event-horizon-shahay-beat",
     songTitle: "Event Horizon & Shahay - Beat Rider",
+    artworkUrl: "https://i1.sndcdn.com/artworks-9b2r88bUh9AwRlH4-7Q7h4g-t500x500.jpg",
   },
   {
     id: 832408972,
@@ -61,6 +85,7 @@ const songs = [
     channelTitle: "Feuille Vierge",
     songUrl: "https://soundcloud.com/feuille-vierge/event-horizon-vitamin-d",
     songTitle: "Event Horizon - Vitamin D",
+    artworkUrl: "https://i1.sndcdn.com/artworks-bs7WJHdqTnWsf4VW-azS0Ig-t500x500.jpg",
   },
   {
     id: 947367988,
@@ -68,6 +93,7 @@ const songs = [
     channelTitle: "The Wub Club",
     songUrl: "https://soundcloud.com/wubclubofficial/event-horizon-gojira",
     songTitle: "Event Horizon - Gojira",
+    artworkUrl: "https://i1.sndcdn.com/artworks-rzbf2pNEyjZIDHc8-BruEgQ-t500x500.jpg",
   },
   {
     id: 936937555,
@@ -75,6 +101,7 @@ const songs = [
     channelTitle: "Digital Koala",
     songUrl: "https://soundcloud.com/digital_koala/digital-koala-event-horizon-ft-dread-mc-khabib",
     songTitle: "Digital Koala & Event Horizon ft. Dread MC - Khabib",
+    artworkUrl: "https://i1.sndcdn.com/artworks-yjoVEL7PyMdisSXt-K4LKSA-t500x500.jpg",
   },
   {
     id: 918140161,
@@ -82,6 +109,7 @@ const songs = [
     channelTitle: "Night Bass",
     songUrl: "https://soundcloud.com/nightbassrecords/event-horizon-reset",
     songTitle: "Event Horizon - Reset",
+    artworkUrl: "https://i1.sndcdn.com/artworks-jCtZrdybngE17Y9e-vdesdw-t500x500.jpg",
   },
   {
     id: 878549452,
@@ -89,6 +117,7 @@ const songs = [
     channelTitle: "Strictly Flava",
     songUrl: "https://soundcloud.com/strictly-flava/event-horizon-for-you",
     songTitle: "Event Horizon - For You",
+    artworkUrl: "https://i1.sndcdn.com/artworks-dQHZvifNqkaOKZIq-znHIIw-t500x500.jpg",
   },
   {
     id: 850200322,
@@ -96,6 +125,7 @@ const songs = [
     channelTitle: "The Wub Club",
     songUrl: "https://soundcloud.com/wubclubofficial/late-night-thoughts",
     songTitle: "Event Horizon - Late Night Thoughts",
+    artworkUrl: "https://i1.sndcdn.com/artworks-uK0p1ov5U9OrGO25-cP30sQ-t500x500.jpg",
   },
   {
     id: 783707113,
@@ -103,6 +133,7 @@ const songs = [
     channelTitle: "CRUCAST",
     songUrl: "https://soundcloud.com/crucast/event-horizon-dubplate-1",
     songTitle: "Event Horizon - Dubplate",
+    artworkUrl: "https://i1.sndcdn.com/artworks-A1aAyJqxsjpazVy7-ADdGUg-t500x500.jpg",
   },
   {
     id: 734773084,
@@ -110,6 +141,7 @@ const songs = [
     channelTitle: "@SUPERSIZEUK",
     songUrl: "https://soundcloud.com/supersizeuk/event-horizon-fear",
     songTitle: "Event Horizon - Fear",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000659098492-8r3mb3-t500x500.jpg",
   },
   {
     id: 707683144,
@@ -117,6 +149,7 @@ const songs = [
     channelTitle: "Saucy",
     songUrl: "https://soundcloud.com/saucyonline/event-horizon-lucid",
     songTitle: "Event Horizon - Lucid",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000629340943-0u6xf1-t500x500.jpg",
   },
   {
     id: 636718236,
@@ -124,6 +157,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-watching-you-1",
     songTitle: "Event Horizon - Watching You",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000552090162-6xzob0-t500x500.jpg",
   },
   {
     id: 617097033,
@@ -131,6 +165,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-the-reaper",
     songTitle: "Event Horizon - The Reaper",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000531223590-s5wo6x-t500x500.jpg",
   },
   {
     id: 592579872,
@@ -138,6 +173,7 @@ const songs = [
     channelTitle: "Gassed Bass",
     songUrl: "https://soundcloud.com/gassedbristol/event-horizon-scratch-free-download",
     songTitle: "Event Horizon - Scratch",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000506519568-iy0fq7-t500x500.jpg",
   },
   {
     id: 556973970,
@@ -145,6 +181,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-the-invasion-2",
     songTitle: "Event Horizon - The Invasion",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000475087824-x1qsb1-t500x500.jpg",
   },
   {
     id: 516115878,
@@ -152,6 +189,7 @@ const songs = [
     channelTitle: "Open Outlets",
     songUrl: "https://soundcloud.com/openoutlets/event-horizon-go",
     songTitle: "Event Horizon - Go",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000423251169-kiuu0f-t500x500.jpg",
   },
   {
     id: 501194928,
@@ -159,6 +197,7 @@ const songs = [
     channelTitle: "Saucy",
     songUrl: "https://soundcloud.com/saucyonline/event-horizon-unseen-forces",
     songTitle: "Event Horizon - Unseen Forces",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000406883832-zr20dq-t500x500.jpg",
   },
   {
     id: 485146269,
@@ -166,6 +205,7 @@ const songs = [
     channelTitle: "BRØKEN",
     songUrl: "https://soundcloud.com/brokensyndicate/bkn038-event-horizon-tenang-ascent",
     songTitle: "Event Horizon - Tenang Ascent",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000388571379-3crex1-t500x500.jpg",
   },
   {
     id: 448156434,
@@ -173,6 +213,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-rituals",
     songTitle: "Event Horizon - Rituals",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000351853158-rz70n7-t500x500.jpg",
   },
   {
     id: 426655371,
@@ -180,6 +221,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/future-mask-off-event-horizon-remix-vip",
     songTitle: "Future - Mask Off (Event Horizon Remix VIP)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000331752558-eicxcm-t500x500.jpg",
   },
   {
     id: 406088604,
@@ -187,6 +229,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-x-foundry-abomination-1",
     songTitle: "Event Horizon & Foundry - Abomination",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000308689944-t7ohgx-t500x500.jpg",
   },
   {
     id: 389935290,
@@ -194,6 +237,7 @@ const songs = [
     channelTitle: "Articulate Sound",
     songUrl: "https://soundcloud.com/articulate-sound/event-horizon-flying-saucers-1",
     songTitle: "Event Horizon - Flying Saucers",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000291696549-6280uy-t500x500.jpg",
   },
   {
     id: 366337844,
@@ -201,6 +245,7 @@ const songs = [
     channelTitle: "Gassed Bass",
     songUrl: "https://soundcloud.com/gassedbristol/event-horizon-doesnt-matter-free-download",
     songTitle: "Event Horizon - Doesn't Matter",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000266358884-kn4j1x-t500x500.jpg",
   },
   {
     id: 345927581,
@@ -208,6 +253,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-lockdown-1",
     songTitle: "Event Horizon - Lockdown",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000246141608-jdspr4-t500x500.jpg",
   },
   {
     id: 331371913,
@@ -215,6 +261,7 @@ const songs = [
     channelTitle: "CRUCAST",
     songUrl: "https://soundcloud.com/crucast/future-mask-off-event-horizon-remix",
     songTitle: "Future - Mask Off (Event Horizon Remix)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000231804212-4drprn-t500x500.jpg",
   },
   {
     id: 327847012,
@@ -222,6 +269,7 @@ const songs = [
     channelTitle: "Pack London",
     songUrl: "https://soundcloud.com/packlondon/event-horizon-voices-free-download",
     songTitle: "Event Horizon - Voices",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000228146864-hrtfe6-t500x500.jpg",
   },
   {
     id: 325384914,
@@ -229,6 +277,7 @@ const songs = [
     channelTitle: "Project Allout Records",
     songUrl: "https://soundcloud.com/projectalloutrecords/event-horizon-wrong-turn-lengerz-3",
     songTitle: "Event Horizon - Wrong Turn",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000225150487-y0qjwx-t500x500.jpg",
   },
   {
     id: 324633906,
@@ -236,6 +285,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-skanka-1",
     songTitle: "Event Horizon - Skanka",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000224493319-1i8al2-t500x500.jpg",
   },
   {
     id: 315911875,
@@ -243,6 +293,7 @@ const songs = [
     channelTitle: "3000 BASS",
     songUrl: "https://soundcloud.com/3000bass/event-horizon-kamikaze-free-download",
     songTitle: "Event Horizon - Kamikaze",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000216057093-0wlxd4-t500x500.jpg",
   },
   {
     id: 282450092,
@@ -250,6 +301,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-fatter",
     songTitle: "Event Horizon - Fatter",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000181913913-jlscsy-t500x500.jpg",
   },
   {
     id: 272902970,
@@ -257,6 +309,7 @@ const songs = [
     channelTitle: "Event Horizon",
     songUrl: "ttps://soundcloud.com/event_horizonmusic/t2-heartbroken-ftjodie-event-horizon-remix",
     songTitle: "T2 - Heartbroken (ft.Jodie) (Event Horizon Remix)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-000170773076-q3gdzc-t500x500.jpg",
   },
 ];
 
