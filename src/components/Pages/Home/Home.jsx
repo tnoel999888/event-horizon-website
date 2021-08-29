@@ -27,8 +27,8 @@ function Home() {
         <Carousel.Item className="carousel-item">
           <div className={carouselItem.className} />
           <Carousel.Caption>
-            <h3>{carouselItem.header}</h3>
-            <p>{carouselItem.description}</p>
+            <h3 className="carousel-item__header">{carouselItem.header}</h3>
+            <p className="carousel-item__description">{carouselItem.description}</p>
           </Carousel.Caption>
         </Carousel.Item>
       ))}

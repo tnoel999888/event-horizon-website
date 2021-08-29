@@ -1,9 +1,3 @@
-.contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .email-status-msg__hide,
 .email-status-msg {
   color: #848484;
@@ -13,11 +7,6 @@
 
 .email-status-msg__hide {
   visibility: hidden;
-}
-
-.email-and-form {
-  width: 350px;
-  margin-left: 48px;
 }
 
 .spinner {
@@ -50,12 +39,48 @@
   color: #848484;
 }
 
-.press-shot-2 {
-  height: inherit;
-  width: 400px;
-}
-
 .sending-label {
   display: inline-block;
   margin-right: 8px;
+}
+
+@media (min-width: 901px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .press-shot-2 {
+    height: inherit;
+    width: 400px;
+  }
+
+  .email-and-form {
+    width: 350px;
+    margin-left: 48px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .press-shot-2 {
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+    width: 100%;
+    min-width: 282px;
+    max-width: 400px;
+  }
+
+  .email-and-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 282px;
+    max-width: 350px;
+  }
 }

@@ -1,13 +1,11 @@
 .app {
   min-height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
   text-align: center;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.page {
-  height: 80%;
 }

@@ -1,3 +1,8 @@
 .logo {
   padding-top: 48px;
 }
+
+.logo-img {
+  width: 80%; 
+  max-width: 300px;
+}

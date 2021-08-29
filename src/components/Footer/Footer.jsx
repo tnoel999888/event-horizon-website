@@ -44,20 +44,18 @@ function Footer() {
 
   return (
     <div className="footer">
-      <div>
-        {socials.map((social, i) => (
-          <div
-            key={social.label}
-            onFocus={() => updateSocial(i, { hovering: true })}
-            onBlur={() => updateSocial(i, { hovering: false })}
-            onMouseOver={() => updateSocial(i, { hovering: true })}
-            onMouseLeave={() => updateSocial(i, { hovering: false })}
-            className={social.className}
-          >
-            <SocialIcon url={social.url} fgColor={!socials[i].hovering ? "#848484" : "#ffffff"} bgColor={!socials[i].hovering ? "#000000" : null} />
-          </div>
-        ))}
-      </div>
+      {socials.map((social, i) => (
+        <div
+          key={social.label}
+          onFocus={() => updateSocial(i, { hovering: true })}
+          onBlur={() => updateSocial(i, { hovering: false })}
+          onMouseOver={() => updateSocial(i, { hovering: true })}
+          onMouseLeave={() => updateSocial(i, { hovering: false })}
+          className={social.className}
+        >
+          <SocialIcon url={social.url} fgColor={!socials[i].hovering ? "#848484" : "#ffffff"} bgColor={!socials[i].hovering ? "#000000" : null} />
+        </div>
+      ))}
     </div>
   );
 }
