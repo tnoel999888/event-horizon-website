@@ -6,7 +6,7 @@ import PlayButtonSvg from "./PlayButtonSvg";
 import SoundcloudLogoSvg from "./SoundcloudLogoSvg";
 
 function Music() {
-  const [playClicked, setPlayClicked] = useState(-1);
+  const [playClicked, setPlayClicked] = useState([]);
   const iframeConfigStr = IFRAME_CONFIG.reduce((acc, val) => `${acc}&${val.key}=${val.value}`, "");
 
   const renderIframe = (song) => (
@@ -25,7 +25,11 @@ function Music() {
     <>
       <div className="song-media-header">
         <button
-          onClick={() => setPlayClicked(index)}
+          onClick={() => {
+            const newPlayClicked = [...playClicked];
+            newPlayClicked.push(index);
+            setPlayClicked(newPlayClicked);
+          }}
           type="button"
           className="song-media-play-button"
         >
@@ -51,7 +55,7 @@ function Music() {
       {songs.map((song, index) => (
         <div className="song" key={song.songUrl}>
           <div className="song-media-container">
-            { playClicked === index ? renderIframe(song) : renderDummyIframe(song, index)}
+            { playClicked.includes(index) ? renderIframe(song) : renderDummyIframe(song, index)}
           </div>
           <div className="song-details">
             <a href={song.songUrl} className="artist-and-song-name" title={song.songTitle} target="_blank" rel="noreferrer">{song.songTitle}</a>
