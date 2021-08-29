@@ -1,8 +1,7 @@
 .contact {
-  width: 50%;
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .email-status-msg__hide,
@@ -17,10 +16,8 @@
 }
 
 .email-and-form {
-  max-width: 500px;
-  min-width: 300px;
-  width: inherit;
-  margin: auto;
+  width: 350px;
+  margin-left: 48px;
 }
 
 .spinner {
@@ -54,12 +51,8 @@
 }
 
 .press-shot-2 {
-  max-height: 900px;
-  max-width: 500px;
-  min-width: 300px;
   height: inherit;
-  width: inherit;
-  margin: auto;
+  width: 400px;
 }
 
 .sending-label {
