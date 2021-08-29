@@ -2,13 +2,17 @@
   margin-top: 24px;
   max-width: 1640px;
   margin: auto;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, 326px);
+  justify-content: center;
+  align-content: flex-start;
 }
 
 .song {
   width: 300px;
   height: 320px;
   margin: 14px;
-  float: left;
 }
 
 .song-details {
