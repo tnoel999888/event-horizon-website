@@ -23,11 +23,12 @@ function News() {
     setMediaData(newMediaData);
     setDataLoading(false);
 
-    const { next } = dataObj.paging;
-    const { after } = dataObj.paging.cursors;
-
-    if (next) {
-      setAfterQueryParam(after);
+    if (
+      dataObj
+      && dataObj.paging
+      && dataObj.paging.next
+    ) {
+      setAfterQueryParam(dataObj.paging.cursors.after);
     } else {
       setShowMoreButtonVisible(false);
     }
