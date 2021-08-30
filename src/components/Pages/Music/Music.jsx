@@ -12,8 +12,8 @@ function Music() {
   const renderIframe = (song) => (
     <iframe
       title={song.songTitle}
-      width="293"
-      height="293"
+      width="300"
+      height="300"
       scrolling="no"
       frameBorder="no"
       allow="autoplay"
