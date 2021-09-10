@@ -1,5 +1,13 @@
 const songs = [
   {
+    id: 1122392113,
+    channelUrl: "https://soundcloud.com/event_horizonmusic",
+    channelTitle: "Event Horizon",
+    songUrl: "https://soundcloud.com/event_horizonmusic/event-horizon-truth-serum",
+    songTitle: "Event Horizon - Truth Serum",
+    artworkUrl: "https://i1.sndcdn.com/artworks-fh7EyifBRgEHmLYu-8xhzIw-t500x500.jpg",
+  },
+  {
     id: 1099213801,
     channelUrl: "https://soundcloud.com/event_horizonmusic",
     channelTitle: "Event Horizon",
