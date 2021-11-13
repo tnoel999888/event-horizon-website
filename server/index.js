@@ -5,6 +5,8 @@ const cors = require('cors');
 const creds = require('./config');
 const fetch = require("node-fetch");
 const port = process.env.PORT || 3002;
+const path = require('path');
+
 require("dotenv").config();
 
 const transport = {
