@@ -34,7 +34,7 @@ function News() {
     }
   }
 
-  useEffect(async () => {
+  useEffect(() => {
     getInstaData();
 
     const interval = setInterval(async () => {
@@ -82,6 +82,7 @@ function News() {
         {
           mediaData
           && mediaData.includes(undefined)
+          && !dataLoading
           && <span className="error-msg">Failed to fetch Instagram data :(</span>
         }
       </div>

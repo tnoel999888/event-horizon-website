@@ -1,5 +1,13 @@
 const songs = [
   {
+    id: 1136607748,
+    channelUrl: "https://soundcloud.com/dndrecs",
+    channelTitle: "DND RECS",
+    songUrl: "https://soundcloud.com/dndrecs/event-horizon-mkjay-disco-vibes",
+    songTitle: "Event Horizon & MKJAY - Disco Vibes",
+    artworkUrl: "https://i1.sndcdn.com/artworks-rp27C66IJRJPaUjx-iwz3XQ-t500x500.jpg",
+  },
+  {
     id: 1122392113,
     channelUrl: "https://soundcloud.com/event_horizonmusic",
     channelTitle: "Event Horizon",

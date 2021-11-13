@@ -1,13 +1,4 @@
-# Event Horizon Website
-
-## Client
-The front-end React app with pages:
-- Home
-- Music
-- News
-- Contact
-
-## Server
+# event-horizon-website-backend
 The backend Nodejs email/Instagram API server for my Event Horizon website.
 
 A `config.js` file is required with email login credentials:
