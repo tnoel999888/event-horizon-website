@@ -5,7 +5,9 @@ import "./logo.css";
 function Logo() {
   return (
     <div className="logo">
-      <a href="/"><img className="logo-img" alt="Event Horizon logo" src={logo} /></a>
+      <a href="/">
+        <img className="logo-img" alt="Event Horizon logo" src={logo} />
+      </a>
     </div>
   );
 }

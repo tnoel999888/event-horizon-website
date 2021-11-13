@@ -10,7 +10,13 @@ function Navigation() {
   return (
     <div className="navigation">
       {navigationItems.map((navItem) => (
-        <Link to={navItem.url} className={`nav-item ${path === navItem.url ? "active" : ""}`} key={navItem.label}>{navItem.label}</Link>
+        <Link
+          to={navItem.url}
+          className={`nav-item ${path === navItem.url ? "active" : ""}`}
+          key={navItem.label}
+        >
+          {navItem.label}
+        </Link>
       ))}
     </div>
   );

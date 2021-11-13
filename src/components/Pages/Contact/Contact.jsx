@@ -9,7 +9,7 @@ function Contact() {
   const initialFormDetails = { name: "", email: "", message: "" };
   const [formDetails, setFormDetails] = useState(initialFormDetails);
   const [formValid, setFormValid] = useState(false);
-  const [emailStatus, setEmailStatus] = useState("SUBMIT");
+  const [emailStatus, setEmailStatus] = useState(EMAIL_STATUS.SUBMIT.key);
   const updateFormDetails = (key, value) => setFormDetails({ ...formDetails, [key]: value });
 
   function resetForm() {

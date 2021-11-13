@@ -36,8 +36,24 @@ function Music() {
           <PlayButtonSvg />
         </button>
         <div className="song-media-channel-and-song-name">
-          <a href={song.channelUrl} className="song-media-channel-name" title={song.channelTitle} target="_blank" rel="noreferrer">{song.channelTitle}</a>
-          <a href={song.songUrl} className="song-media-song-name" title={song.songTitle} target="_blank" rel="noreferrer">{song.songTitle}</a>
+          <a
+            href={song.channelUrl}
+            className="song-media-channel-name"
+            title={song.channelTitle}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {song.channelTitle}
+          </a>
+          <a
+            href={song.songUrl}
+            className="song-media-song-name"
+            title={song.songTitle}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {song.songTitle}
+          </a>
         </div>
         <a href={song.songUrl} target="blank" className="soundcloud-logo">
           <SoundcloudLogoSvg />
@@ -58,7 +74,15 @@ function Music() {
             { playClicked.includes(index) ? renderIframe(song) : renderDummyIframe(song, index)}
           </div>
           <div className="song-details">
-            <a href={song.songUrl} className="artist-and-song-name" title={song.songTitle} target="_blank" rel="noreferrer">{song.songTitle}</a>
+            <a
+              href={song.songUrl}
+              className="artist-and-song-name"
+              title={song.songTitle}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {song.songTitle}
+            </a>
           </div>
         </div>
       ))}
