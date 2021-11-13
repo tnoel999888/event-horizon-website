@@ -1,29 +1,11 @@
-import "./navigation.css";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import navigationItems from "./consts";
+import "./navigation.css";
 
 function Navigation() {
   const location = useLocation();
   const path = location.pathname;
-
-  const navigationItems = [
-    {
-      label: "HOME",
-      url: "/",
-    },
-    {
-      label: "NEWS",
-      url: "/news/",
-    },
-    {
-      label: "MUSIC",
-      url: "/music/",
-    },
-    {
-      label: "CONTACT",
-      url: "/contact/",
-    },
-  ];
 
   return (
     <div className="navigation">

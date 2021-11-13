@@ -1,28 +1,8 @@
-import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import {
-  Header, Footer, Home, Music, Contact, News,
-} from "./components";
-
-const navigation = [
-  {
-    path: "/",
-    component: Home,
-  },
-  {
-    path: "/news/",
-    component: News,
-  },
-  {
-    path: "/music/",
-    component: Music,
-  },
-  {
-    path: "/contact/",
-    component: Contact,
-  },
-];
+import { Header, Footer } from "./components";
+import navigation from "./consts";
+import "./App.css";
 
 function App() {
   return (

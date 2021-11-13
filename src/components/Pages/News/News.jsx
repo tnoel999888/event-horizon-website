@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./news.css";
 import { CircularProgress } from "@material-ui/core";
 import { getMediaIcon, getMediaAlt } from "./consts";
 import fetchInstaFeed from "../../../api/instagram";
+import "./news.css";
 
 function News() {
   const [hoverCaption, setHoverCaption] = useState("");
@@ -47,7 +47,7 @@ function News() {
   return (
     <div className="news">
       <div className="feed">
-        {mediaData && mediaData.map((mediaItem, index) => {
+        {mediaData && !mediaData.includes(undefined) && mediaData.map((mediaItem, index) => {
           const itemIsHovered = index === hoverIndex;
           const {
             caption,
@@ -79,6 +79,11 @@ function News() {
             </a>
           );
         })}
+        {
+          mediaData
+          && mediaData.includes(undefined)
+          && <span className="error-msg">Failed to fetch Instagram data :(</span>
+        }
       </div>
       <div className="load-more-and-loading-spinner-container">
         { showMoreButtonVisible && !dataLoading && (

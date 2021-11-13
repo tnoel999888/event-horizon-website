@@ -1,13 +1,13 @@
-import "./music.css";
 import React, { useState } from "react";
 import songs from "./songs";
-import IFRAME_CONFIG from "./consts";
+import iframeConfig from "./consts";
 import PlayButtonSvg from "./PlayButtonSvg";
 import SoundcloudLogoSvg from "./SoundcloudLogoSvg";
+import "./music.css";
 
 function Music() {
   const [playClicked, setPlayClicked] = useState([]);
-  const iframeConfigStr = IFRAME_CONFIG.reduce((acc, val) => `${acc}&${val.key}=${val.value}`, "");
+  const iframeConfigStr = iframeConfig.reduce((acc, val) => `${acc}&${val.key}=${val.value}`, "");
 
   const renderIframe = (song) => (
     <iframe

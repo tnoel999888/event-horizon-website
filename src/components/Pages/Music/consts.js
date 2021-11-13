@@ -1,4 +1,4 @@
-export default [
+const iframeConfig = [
   {
     key: "color",
     value: "%23ff5500",
@@ -32,3 +32,5 @@ export default [
     value: "true",
   },
 ];
+
+export default iframeConfig;
