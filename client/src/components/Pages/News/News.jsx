@@ -39,7 +39,7 @@ function News() {
 
     const interval = setInterval(async () => {
       getInstaData();
-    }, 60000);
+    }, 600000);
 
     return () => clearInterval(interval);
   }, []);

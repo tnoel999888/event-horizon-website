@@ -12,9 +12,9 @@ const transport = {
     host: 'smtp-mail.outlook.com',
     port: 587,
     auth: {
-    user: process.env.EMAIL_USERNAME,
-    pass: process.env.EMAIL_PASSWORD
-  }
+      user: process.env.EMAIL_USERNAME,
+      pass: process.env.EMAIL_PASSWORD
+    }
 }
 
 const transporter = nodemailer.createTransport(transport)
@@ -79,7 +79,10 @@ app.use('/', router)
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
-app.listen(port)
+app.listen(port, (err) => {
+  if (err) return console.log(err);
+  console.log('Server running on port: ', port);
+})
