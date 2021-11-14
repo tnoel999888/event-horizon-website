@@ -1,7 +1,5 @@
-import { hostname, protocol, apiPort } from "./consts";
-
 async function fetchInstaFeed(afterQueryParam) {
-  return fetch(`${protocol}//${hostname}:${apiPort}/api/instagram/${afterQueryParam}`)
+  return fetch(`/api/instagram/${afterQueryParam}`)
     .then((res) => res.text());
 }
 

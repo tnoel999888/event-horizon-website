@@ -1,7 +1,5 @@
-import { hostname, protocol, apiPort } from "./consts";
-
 async function sendEmail(formDetails) {
-  return fetch(`${protocol}//${hostname}:${apiPort}/send`, {
+  return fetch("/send", {
     method: "POST",
     body: JSON.stringify(formDetails),
     headers: {
