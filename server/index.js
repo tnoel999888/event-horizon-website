@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const creds = require('./config');
 const fetch = require("node-fetch");
 const port = process.env.PORT || 3002;
 const path = require('path');
@@ -13,8 +12,8 @@ const transport = {
     host: 'smtp-mail.outlook.com',
     port: 587,
     auth: {
-    user: creds.USER,
-    pass: creds.PASS
+    user: process.env.EMAIL_USERNAME,
+    pass: process.env.EMAIL_PASSWORD
   }
 }
 
