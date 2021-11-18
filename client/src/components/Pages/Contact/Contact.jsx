@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CircularProgress } from "@material-ui/core";
-import PressShot2 from "../../../assets/press-shot-2.jpg";
+import PressShot2 from "../../../assets/press-shot-2-low-res.jpg";
 import sendEmail from "../../../api/email";
 import EMAIL_STATUS from "./consts";
 import "./contact.css";

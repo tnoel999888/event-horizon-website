@@ -27,7 +27,7 @@ transporter.verify((error, success) => {
   }
 });
 
-router.post('/send', (req, res, next) => {
+router.post('/api/send-email', (req, res, next) => {
   const name = req.body.name
   const email = req.body.email
   const message = req.body.message
@@ -57,7 +57,7 @@ router.get('/api/instagram/:after?', async (req, res) => {
   const { after } = req.params;
   const afterQuery = after ? `&after=${after}` : '';
   try {
-    const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,permalink,media_type,media_url,thumbnail_url&access_token=${process.env.INSTAGRAM_ACCESS_TOKEN}${afterQuery}`)
+    const response = await fetch(`https://graph.instagram.com/me/media?limit=24&fields=id,caption,permalink,media_type,media_url,thumbnail_url&access_token=${process.env.INSTAGRAM_ACCESS_TOKEN}${afterQuery}`)
     const json = await response.text();
     return res.json({
       success: true,

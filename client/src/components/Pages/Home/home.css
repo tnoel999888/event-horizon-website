@@ -1,13 +1,13 @@
 .press-shot-1 {
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-1.jpg') 63% 39%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-1-low-res.jpg') 68% 39%;
 }
 
 .press-shot-3 {
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-3.jpg') 56% 50%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-3-low-res.jpg') 56% 50%;
 }
 
 .press-shot-4 {
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-4.jpg') 54% 39%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-4-low-res.jpg') 54% 39%;
 }
 
 .press-shot-1,

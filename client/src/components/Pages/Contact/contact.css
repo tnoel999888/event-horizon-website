@@ -44,7 +44,12 @@
   margin-right: 8px;
 }
 
-@media (min-width: 901px) {
+textarea.form-control { 
+  resize: none;
+  height: 253px;
+}
+
+@media (min-width: 1081px) {
   .contact {
     display: flex;
     flex-direction: row;
@@ -53,16 +58,16 @@
 
   .press-shot-2 {
     height: inherit;
-    width: 400px;
+    width: 500px;
   }
 
   .email-and-form {
-    width: 350px;
-    margin-left: 48px;
+    width: 400px;
+    margin-left: 60px;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1080px) {
   .contact {
     flex-direction: column;
   }
@@ -70,10 +75,11 @@
   .press-shot-2 {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 14px;
     height: inherit;
     width: 100%;
     min-width: 282px;
-    max-width: 400px;
+    max-width: 500px;
   }
 
   .email-and-form {
@@ -81,6 +87,6 @@
     margin-right: auto;
     width: 100%;
     min-width: 282px;
-    max-width: 350px;
+    max-width: 500px;
   }
 }

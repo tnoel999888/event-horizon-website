@@ -1,5 +1,5 @@
 async function sendEmail(formDetails) {
-  return fetch("/send", {
+  return fetch("/api/send-email", {
     method: "POST",
     body: JSON.stringify(formDetails),
     headers: {
