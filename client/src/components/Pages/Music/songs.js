@@ -1,5 +1,13 @@
 const songs = [
   {
+    id: 1163064409,
+    channelUrl: "https://soundcloud.com/wubclubofficial",
+    channelTitle: "The Wub Club",
+    songUrl: "https://soundcloud.com/wubclubofficial/event-horizon-gojira-vip",
+    songTitle: "Event Horizon - Gojira VIP",
+    artworkUrl: "https://i1.sndcdn.com/artworks-NXjKcfrz2GD2rNAT-dumOtQ-t500x500.jpg",
+  },
+  {
     id: 1136607748,
     channelUrl: "https://soundcloud.com/dndrecs",
     channelTitle: "DND RECS",
