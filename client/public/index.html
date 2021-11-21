@@ -39,7 +39,10 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-0T8HE8DWPK');
+      gtag('config', 'G-0T8HE8DWPK', {
+        cookie_domain: 'event-horizon-website.herokuapp.com',
+        cookie_flags: 'SameSite=None;Secure',
+      });
     </script>
   </head>
   <body>
