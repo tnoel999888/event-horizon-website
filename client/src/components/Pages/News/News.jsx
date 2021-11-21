@@ -15,10 +15,18 @@ function News() {
   async function getInstaData() {
     setDataLoading(true);
 
+    let newMediaData = [];
     const data = await fetchInstaFeed(afterQueryParam);
-    const dataJson = JSON.parse(data).json;
-    const dataObj = JSON.parse(dataJson);
-    const newMediaData = [...mediaData].concat(dataObj.data);
+
+    if (data) {
+      const dataJson = JSON.parse(data).json;
+      if (dataJson) {
+        const dataObj = JSON.parse(dataJson);
+        if (dataObj) {
+          newMediaData = [...mediaData].concat(dataObj.data);
+        }
+      }
+    }
 
     setMediaData(newMediaData);
     setDataLoading(false);
