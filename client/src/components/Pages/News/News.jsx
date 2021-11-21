@@ -24,21 +24,21 @@ function News() {
         const dataObj = JSON.parse(dataJson);
         if (dataObj) {
           newMediaData = [...mediaData].concat(dataObj.data);
+
+          setMediaData(newMediaData);
+          setDataLoading(false);
+
+          if (
+            dataObj
+            && dataObj.paging
+            && dataObj.paging.next
+          ) {
+            setAfterQueryParam(dataObj.paging.cursors.after);
+          } else {
+            setShowMoreButtonVisible(false);
+          }
         }
       }
-    }
-
-    setMediaData(newMediaData);
-    setDataLoading(false);
-
-    if (
-      dataObj
-      && dataObj.paging
-      && dataObj.paging.next
-    ) {
-      setAfterQueryParam(dataObj.paging.cursors.after);
-    } else {
-      setShowMoreButtonVisible(false);
     }
   }
 
