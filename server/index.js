@@ -6,9 +6,6 @@ const fetch = require("node-fetch");
 const port = process.env.PORT || 3002;
 const path = require('path');
 const e = require('express');
-console.log('process.env.EMAIL_USERNAME 1: ', process.env.EMAIL_USERNAME);
-console.log('process.env.EMAIL_PASSWORD 1: ', process.env.EMAIL_PASSWORD);
-console.log('process.env.INSTAGRAM_ACCESS_TOKEN 1: ', process.env.INSTAGRAM_ACCESS_TOKEN);
 
 require("dotenv").config();
 
@@ -66,7 +63,7 @@ router.get('/api/instagram/:after?', async (req, res) => {
     if (typeof responseText === 'string') {
       return res.status(500).json({
         success: false,
-        message: "Error: Unable to fetch Instagram data",
+        message: "Error: Unable to fetch Instagram data.",
       })
     } else {
       return res.json({
