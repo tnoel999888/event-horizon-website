@@ -6,6 +6,7 @@ const fetch = require("node-fetch");
 const port = process.env.PORT || 3002;
 const path = require('path');
 const e = require('express');
+console.log('process.env 1: ', process.env);
 
 require("dotenv").config();
 
@@ -29,6 +30,7 @@ transporter.verify((error, success) => {
 });
 
 router.post('/api/send-email', (req, res, next) => {
+  console.log('process.env 2: ', process.env);
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message;
@@ -55,6 +57,7 @@ router.post('/api/send-email', (req, res, next) => {
 });
 
 router.get('/api/instagram/:after?', async (req, res) => {
+  console.log('process.env 3: ', process.env);
   const { after } = req.params;
   const afterQuery = after ? `&after=${after}` : '';
   try {
