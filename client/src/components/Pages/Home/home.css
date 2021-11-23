@@ -27,7 +27,7 @@
   .press-shot-1,
   .press-shot-3,
   .press-shot-4 {
-    min-height: 500px;
+    margin-top: 14px;
     background-size: cover;
   }
 
