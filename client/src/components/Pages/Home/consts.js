@@ -7,7 +7,7 @@ const carouselItems = [
   {
     className: "press-shot-1",
     header: "Releases:",
-    description: "Night Bass, Monstercat, Circus Records, IN/ROTATION, Maraki Records, Crucast, Deeprot, The Wub Club, Saucy Records, Supersize, Strictly Flava, Yosh, 3000 Bass, Feuille Vierge, Gassed, Brøken, Project Allout Records, Pack London, Open Outlets, Articulate Sound, Certified.",
+    description: "Night Bass, Monstercat, Circus Records, DND Recs, IN/ROTATION, Maraki Records, Crucast, Deeprot, The Wub Club, Yosh, 3000 Bass and more.",
   },
   {
     className: "press-shot-4",
