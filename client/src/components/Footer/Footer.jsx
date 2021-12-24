@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
+import { block } from "bem-cn";
 import socialsData from "./consts";
-import "./footer.css";
+import "./footer.scss";
+
+const classname = block("footer");
 
 function Footer() {
   const [socials, setSocials] = useState(socialsData);
@@ -13,7 +16,7 @@ function Footer() {
   };
 
   return (
-    <div className="footer">
+    <div className={classname()}>
       {socials.map((social, i) => (
         <div
           key={social.label}
@@ -21,7 +24,7 @@ function Footer() {
           onBlur={() => updateSocial(i, { hovering: false })}
           onMouseOver={() => updateSocial(i, { hovering: true })}
           onMouseLeave={() => updateSocial(i, { hovering: false })}
-          className={social.className}
+          className={classname(social.className)}
         >
           <SocialIcon
             url={social.url}

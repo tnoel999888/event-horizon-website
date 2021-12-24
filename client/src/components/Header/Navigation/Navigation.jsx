@@ -1,18 +1,21 @@
 import React from "react";
+import { block } from "bem-cn";
 import { Link, useLocation } from "react-router-dom";
 import navigationItems from "./consts";
-import "./navigation.css";
+import "./navigation.scss";
+
+const classname = block("navigation");
 
 function Navigation() {
   const location = useLocation();
   const path = location.pathname;
 
   return (
-    <div className="navigation">
+    <div className={classname()}>
       {navigationItems.map((navItem) => (
         <Link
           to={navItem.url}
-          className={`nav-item ${path === navItem.url ? "active" : ""}`}
+          className={classname(`item ${path === navItem.url ? "active" : ""}`)}
           key={navItem.label}
         >
           {navItem.label}

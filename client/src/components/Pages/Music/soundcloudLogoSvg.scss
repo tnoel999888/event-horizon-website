@@ -1,0 +1,9 @@
+.soundcloudLogo {
+  &__path {
+    fill: #fff;
+  }
+}
+
+.soundcloud-logo:hover .soundcloudLogo__path {
+  fill: url("#logo_hover_35");
+}
