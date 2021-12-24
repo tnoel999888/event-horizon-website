@@ -1,23 +1,30 @@
 .home {
-  &__press-shot-1 {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-1-low-res.jpg') 68% 39%;
+  &__press-shot {
+    $gradient-colour: rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%;
+    $gradient: linear-gradient(to bottom, $gradient-colour);
+    
+    &-1 {
+      background: $gradient, url('../../../assets/press-shot-1-low-res.jpg') 68% 39%;
+    }
+
+    &-3 {
+      background: $gradient, url('../../../assets/press-shot-3-low-res.jpg') 56% 50%;
+    }
+
+    &-4 {
+      background: $gradient, url('../../../assets/press-shot-4-low-res.jpg') 54% 39%;
+    }
   }
   
-  &__press-shot-3 {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-3-low-res.jpg') 56% 50%;
+  &__press-shot {
+    &-1,
+    &-3,
+    &-4 {
+      min-height: 600px;
+      background-size: cover;
+    }
   }
-  
-  &__press-shot-4 {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,1) 100%), url('../../../assets/press-shot-4-low-res.jpg') 54% 39%;
-  }
-  
-  &__press-shot-1,
-  &__press-shot-3,
-  &__press-shot-4 {
-    min-height: 600px;
-    background-size: cover;
-  }
-  
+
   &__carousel {
     width: 80%;
     height: 100%;
@@ -25,23 +32,27 @@
   }
   
   @media only screen and (max-width: 425px) {
-    &__press-shot-1,
-    &__press-shot-3,
-    &__press-shot-4 {
-      margin-top: 14px;
+    &__press-shot {
+      &-1,
+      &-3,
+      &-4 {
+        margin-top: 14px;
+      }
     }
   
     &__carousel {
       width: 100%;
-    }
-  
-    &__carousel-item__header {
-      font-size: 16px;
-      font-weight: 700;
-    }
-  
-    &__carousel-item__description {
-      font-size: 12px;
+
+      &-item {
+        &__header {
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        &__description {
+          font-size: 12px;
+        }
+      }
     }
   }
   
@@ -49,26 +60,34 @@
 
 @media (min-width: 426px) and (max-width: 1023px) {
   .home {
-    &__carousel-item__header {
-      font-size: 18px;
-      font-weight: 700;
-    }
-  
-    &__carousel-item__description {
-      font-size: 14px;
+    &__carousel {
+      &-item {
+        &__header {
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        &__description {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
 
 @media (min-width: 1024px) {
   .home {
-    &__carousel-item__header {
-      font-size: 20px;
-      font-weight: 700;
-    }
-  
-    &__carousel-item__description {
-      font-size: 16px;
+    &__carousel {
+      &-item {
+        &__header {
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        &__description {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
