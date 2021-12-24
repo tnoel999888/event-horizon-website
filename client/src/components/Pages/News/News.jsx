@@ -56,7 +56,7 @@ function News() {
   }, []);
 
   return (
-    <div className={classname("news")}>
+    <div className={classname()}>
       <div className={classname("feed")}>
         {mediaData && !mediaData.includes(undefined) && mediaData.map((mediaItem, index) => {
           const itemIsHovered = index === hoverIndex;
