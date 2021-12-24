@@ -1,0 +1,100 @@
+@use '../../../variables' as *;
+
+@media (min-width: 1081px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__press-shot-2 {
+      height: inherit;
+      width: 500px;
+    }
+  
+    &__email-and-form {
+      width: 400px;
+      margin-left: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .contact {
+    flex-direction: column;
+
+    &__press-shot-2 {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 14px;
+      height: inherit;
+      width: 100%;
+      min-width: 282px;
+      max-width: 500px;
+    }
+  
+    &__email-and-form {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      min-width: 282px;
+      max-width: 500px;
+    }
+  }
+}
+
+.contact {
+  &__sending-label {
+    display: inline-block;
+    margin-right: 8px;
+  }  
+
+  &__email {
+    color: $label-text-colour;
+
+    &-status-msg {
+      color: $label-text-colour;
+      margin-bottom: 12px;
+      margin-top: 12px;
+
+      &__hide {
+        color: $label-text-colour;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__email:hover {
+    color: $label-text-colour;
+  }
+
+  &__spinner {
+    margin-left: 8px;
+    vertical-align: baseline;
+  }
+
+  &__form {
+    &-instruction {
+      color: $label-text-colour;
+    }
+
+    &-label {
+      float: left;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+    
+    &-and-email {
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+  }
+
+  textarea.form-control { 
+    resize: none;
+    height: 253px;
+  }
+}

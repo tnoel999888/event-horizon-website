@@ -1,5 +1,8 @@
 import React from "react";
-import "./playButtonSvg.css";
+import { block } from "bem-cn";
+import "./playButtonSvg.scss";
+
+const classname = block("playButton");
 
 const PlayButtonSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
@@ -9,8 +12,8 @@ const PlayButtonSvg = () => (
         <stop offset="100%" stopCsolor="#ff2200" stopOpacity="1" />
       </linearGradient>
     </defs>
-    <circle className="playButton__main" cx="21.5" cy="21.5" r="21" />
-    <path className="playButton__play" fill="#fff" d="M31,21.5L17,33l2.5-11.5L17,10L31,21.5z" />
+    <circle className={classname("main")} cx="21.5" cy="21.5" r="21" />
+    <path className={classname("play")} fill="#fff" d="M31,21.5L17,33l2.5-11.5L17,10L31,21.5z" />
   </svg>
 );
 

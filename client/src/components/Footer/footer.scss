@@ -1,0 +1,15 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__spotify,
+  &__soundcloud,
+  &__twitter,
+  &__instagram,
+  &__facebook {
+    display: inline-block;
+    margin: 36px 4px 8px 4px;
+  }
+}

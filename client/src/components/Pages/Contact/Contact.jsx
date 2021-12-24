@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { CircularProgress } from "@material-ui/core";
+import { block } from "bem-cn";
 import PressShot2 from "../../../assets/press-shot-2-low-res.jpg";
 import sendEmail from "../../../api/email";
 import EMAIL_STATUS from "./consts";
-import "./contact.css";
+import "./contact.scss";
+
+const classname = block("contact");
 
 function Contact() {
   const initialFormDetails = { name: "", email: "", message: "" };
@@ -66,7 +69,7 @@ function Contact() {
 
   const sendingRenderer = (
     <div>
-      <p className="sending-label">Sending...</p>
+      <p className={classname("sending-label")}>Sending...</p>
       <CircularProgress size="1rem" />
     </div>
   );
@@ -91,20 +94,20 @@ function Contact() {
   };
 
   return (
-    <div className="contact">
-      <img className="press-shot-2" alt="" src={PressShot2} height="900" />
+    <div className={classname()}>
+      <img className={classname("press-shot-2")} alt="" src={PressShot2} height="900" />
 
-      <div className="email-and-form">
-        <div className="title-and-email">
-          <p className="title">Bookings/General Enquiries/Promo:</p>
-          <a className="email" href="mailto:eventhorizonmusic@outlook.com">eventhorizonmusic@outlook.com</a>
+      <div className={classname("email-and-form")}>
+        <div className={classname("title-and-email")}>
+          <p className={classname("title")}>Bookings/General Enquiries/Promo:</p>
+          <a className={classname("email")} href="mailto:eventhorizonmusic@outlook.com">eventhorizonmusic@outlook.com</a>
         </div>
 
-        <p className="form-instruction">- Or fill out the form below -</p>
+        <p className={classname("form-instruction")}>- Or fill out the form below -</p>
 
         <form className="form" method="POST" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label className="form-label" htmlFor="name">Name:</label>
+            <label className={classname("form-label")} htmlFor="name">Name:</label>
             <input
               id="name"
               type="text"
@@ -115,7 +118,7 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <label className="form-label" htmlFor="exampleInputEmail1">Email address:</label>
+            <label className={classname("form-label")} htmlFor="exampleInputEmail1">Email address:</label>
             <input
               id="exampleInputEmail1"
               type="email"
@@ -127,7 +130,7 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <label className="form-label" htmlFor="message">Message:</label>
+            <label className={classname("form-label")} htmlFor="message">Message:</label>
             <textarea
               className="form-control"
               rows="5"

@@ -1,0 +1,20 @@
+@use '../../../variables' as *;
+
+.navigation {
+  margin: 12px 0px;
+
+  &__item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: $label-text-colour;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.4s ease;
+  }
+  
+  &__item:hover,
+  .active {
+    color: $white;
+    text-decoration: none;
+  }
+}

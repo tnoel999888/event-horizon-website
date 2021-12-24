@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { block } from "bem-cn";
 import songs from "./songs";
 import iframeConfig from "./consts";
 import PlayButtonSvg from "./PlayButtonSvg";
 import SoundcloudLogoSvg from "./SoundcloudLogoSvg";
-import "./music.css";
+import "./music.scss";
+
+const classname = block("music");
 
 function Music() {
   const [playClicked, setPlayClicked] = useState([]);
@@ -23,7 +26,7 @@ function Music() {
 
   const renderDummyIframe = (song, index) => (
     <>
-      <div className="song-media-header">
+      <div className={classname("song-media-header")}>
         <button
           onClick={() => {
             const newPlayClicked = [...playClicked];
@@ -31,14 +34,14 @@ function Music() {
             setPlayClicked(newPlayClicked);
           }}
           type="button"
-          className="song-media-play-button"
+          className={classname("song-media-play-button")}
         >
           <PlayButtonSvg />
         </button>
-        <div className="song-media-channel-and-song-name">
+        <div className={classname("song-media-channel-and-song-name")}>
           <a
             href={song.channelUrl}
-            className="song-media-channel-name"
+            className={classname("song-media-channel-name")}
             title={song.channelTitle}
             target="_blank"
             rel="noreferrer"
@@ -47,7 +50,7 @@ function Music() {
           </a>
           <a
             href={song.songUrl}
-            className="song-media-song-name"
+            className={classname("song-media-song-name")}
             title={song.songTitle}
             target="_blank"
             rel="noreferrer"
@@ -55,28 +58,28 @@ function Music() {
             {song.songTitle}
           </a>
         </div>
-        <a href={song.songUrl} target="blank" className="soundcloud-logo">
+        <a href={song.songUrl} target="blank" className={classname("soundcloud-logo")}>
           <SoundcloudLogoSvg />
         </a>
       </div>
       <div
-        className="song-media-img"
+        className={classname("song-media-img")}
         style={{ backgroundImage: `url(${song.artworkUrl})` }}
       />
     </>
   );
 
   return (
-    <div className="music">
+    <div className={classname()}>
       {songs.map((song, index) => (
-        <div className="song" key={song.songUrl}>
-          <div className="song-media-container">
+        <div className={classname("song")} key={song.songUrl}>
+          <div className={classname("song-media-container")}>
             { playClicked.includes(index) ? renderIframe(song) : renderDummyIframe(song, index)}
           </div>
-          <div className="song-details">
+          <div className={classname("song-details")}>
             <a
               href={song.songUrl}
-              className="artist-and-song-name"
+              className={classname("artist-and-song-name")}
               title={song.songTitle}
               target="_blank"
               rel="noreferrer"

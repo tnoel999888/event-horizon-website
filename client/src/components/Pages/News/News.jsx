@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { CircularProgress } from "@material-ui/core";
+import { block } from "bem-cn";
 import { getMediaIcon, getMediaAlt } from "./consts";
 import fetchInstaFeed from "../../../api/instagram";
-import "./news.css";
+import "./news.scss";
+
+const classname = block("news");
 
 function News() {
   const [hoverCaption, setHoverCaption] = useState("");
@@ -53,8 +56,8 @@ function News() {
   }, []);
 
   return (
-    <div className="news">
-      <div className="feed">
+    <div className={classname("news")}>
+      <div className={classname("feed")}>
         {mediaData && !mediaData.includes(undefined) && mediaData.map((mediaItem, index) => {
           const itemIsHovered = index === hoverIndex;
           const {
@@ -71,17 +74,17 @@ function News() {
             <a
               key={permalink}
               href={permalink}
-              className="insta-media-container"
+              className={classname("insta-media-container")}
               onMouseEnter={() => {
                 setHoverCaption(caption);
                 setHoverIndex(index);
               }}
               onMouseLeave={() => setHoverIndex(-1)}
             >
-              { itemIsHovered && <div className="insta-media-caption">{hoverCaption}</div> }
-              { mediaIcon && <img src={mediaIcon} alt={mediaAlt} className="insta-media-icon" /> }
+              { itemIsHovered && <div className={classname("insta-media-caption")}>{hoverCaption}</div> }
+              { mediaIcon && <img src={mediaIcon} alt={mediaAlt} className={classname("insta-media-icon")} /> }
               <div
-                className="insta-media-img"
+                className={classname("insta-media-img")}
                 style={{ backgroundImage: `url(${thumbnailUrl || mediaUrl})` }}
               />
             </a>
@@ -91,12 +94,12 @@ function News() {
           mediaData
           && mediaData.includes(undefined)
           && !dataLoading
-          && <span className="error-msg">Failed to fetch Instagram data :(</span>
+          && <span className={classname("error-msg")}>Failed to fetch Instagram data :(</span>
         }
       </div>
-      <div className="load-more-and-loading-spinner-container">
+      <div className={classname("load-more-and-loading-spinner-container")}>
         { showMoreButtonVisible && !dataLoading && (
-          <div className="load-more-btn">
+          <div className={classname("load-more-btn")}>
             <button
               type="button"
               className="btn btn-primary"

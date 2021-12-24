@@ -1,9 +1,0 @@
-.playButton__main {
-  fill: #f50; 
-  stroke: #f50;
-}
-
-.song-media-play-button:hover .playButton__main {
-  fill: #f30; 
-  stroke: #f30;
-}
