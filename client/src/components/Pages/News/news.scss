@@ -1,3 +1,5 @@
+@use '../../../variables' as *;
+
 .news {
   max-width: 1600px;
   margin: auto;
@@ -45,13 +47,13 @@
     
     &-caption:hover,
     &-caption:focus {
-      opacity:1;
+      opacity: 1;
     }
     
     &-caption {
       text-align: center;
       padding: 12px;
-      color: white;
+      color: $white;
       font-size: 12px;
       opacity: 0;
       background: rgba(0, 0, 0, 0.5);

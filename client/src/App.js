@@ -1,15 +1,18 @@
 import React from "react";
+import { block } from "bem-cn";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Header, Footer } from "./components";
 import navigation from "./consts";
-import "./App.css";
+import "./App.scss";
+
+const classname = block("app");
 
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className={classname()}>
         <Header />
-        <div className="page">
+        <div className={classname("page")}>
           {navigation.map(
             (nav) => (
               <Route

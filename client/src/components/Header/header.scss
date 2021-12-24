@@ -1,4 +1,6 @@
+@use '../../variables' as *;
+
 .header {
-  color: white;
+  color: $white;
   text-align: center;
 }

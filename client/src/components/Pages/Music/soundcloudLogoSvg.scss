@@ -1,5 +1,7 @@
+@use '../../../variables' as *;
+
 .soundcloudLogo {
   &__path {
-    fill: #fff;
+    fill: $white;
   }
 }

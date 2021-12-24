@@ -1,6 +1,8 @@
+@use '../../../variables' as *;
+
 .playButton {
   &__main {
-    fill: #f50; 
-    stroke: #f50;
+    fill: $soundcloud-orange-1; 
+    stroke: $soundcloud-orange-1;
   }
 }
