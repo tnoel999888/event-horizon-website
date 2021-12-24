@@ -48,15 +48,25 @@
     margin-right: 8px;
   }  
 
-  &__email-status-msg__hide,
-  &__email-status-msg {
+  &__email {
     color: $label-text-colour;
-    margin-bottom: 12px;
-    margin-top: 12px;
+
+    &-status-msg {
+      color: $label-text-colour;
+      margin-bottom: 12px;
+      margin-top: 12px;
+
+      &__hide {
+        color: $label-text-colour;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        visibility: hidden;
+      }
+    }
   }
 
-  &__email-status-msg__hide {
-    visibility: hidden;
+  &__email:hover {
+    color: $label-text-colour;
   }
 
   &__spinner {
@@ -74,21 +84,13 @@
     }
   }
 
-  &__title-and-email {
-    margin-top: 12px;
-    margin-bottom: 24px;
-  }
-
   &__title {
     margin-bottom: 0;
-  }
-
-  &__email {
-    color: $label-text-colour;
-  }
-
-  &__email:hover {
-    color: $label-text-colour;
+    
+    &-and-email {
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
   }
 
   textarea.form-control { 
