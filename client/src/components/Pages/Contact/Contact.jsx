@@ -4,6 +4,7 @@ import { block } from "bem-cn";
 import PressShot2 from "../../../assets/press-shot-2-low-res.jpg";
 import sendEmail from "../../../api/email";
 import EMAIL_STATUS from "./consts";
+import API_RESPONSE_STATUSES from "../../../api/consts";
 import "./contact.scss";
 
 const classname = block("contact");
@@ -25,10 +26,10 @@ function Contact() {
 
     sendEmail(formDetails).then((response) => {
       setEmailStatus(EMAIL_STATUS.SUBMIT.key);
-      if (response.status === "success") {
+      if (response.status === API_RESPONSE_STATUSES.SUCCESS) {
         setEmailStatus(EMAIL_STATUS.SENT.key);
         resetForm();
-      } else if (response.status === "fail") {
+      } else if (response.status === API_RESPONSE_STATUSES.FAIL) {
         setEmailStatus(EMAIL_STATUS.FAILED.key);
       }
     });
@@ -63,13 +64,13 @@ function Contact() {
       className="btn btn-primary"
       disabled={!formValid || emailStatus === EMAIL_STATUS.SENDING.key}
     >
-      Submit
+      {EMAIL_STATUS.SUBMIT.text}
     </button>
   );
 
   const sendingRenderer = (
     <div>
-      <p className={classname("sending-label")}>Sending...</p>
+      <p className={classname("sending-label")}>{EMAIL_STATUS.SENDING.text}</p>
       <CircularProgress size="1rem" />
     </div>
   );

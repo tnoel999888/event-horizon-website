@@ -10,7 +10,7 @@ function Home() {
   return (
     <Carousel className={classname("carousel")}>
       {carouselItems.map((carouselItem) => (
-        <Carousel.Item className={classname("carousel-item")}>
+        <Carousel.Item className={classname("carousel-item")} key={carouselItem.className}>
           <div className={classname(carouselItem.className)} />
           <Carousel.Caption>
             <h3 className={classname("carousel-item__header")}>{carouselItem.header}</h3>

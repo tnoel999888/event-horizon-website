@@ -5,7 +5,7 @@ const EMAIL_STATUS = {
   },
   SENDING: {
     key: "SENDING",
-    text: "Sending",
+    text: "Sending...",
   },
   SENT: {
     key: "SENT",

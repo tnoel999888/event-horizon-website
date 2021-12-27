@@ -9,7 +9,7 @@ const PlayButtonSvg = () => (
     <defs>
       <linearGradient id="playButton__gradient32" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
         <stop offset="0%" stopColor="ff5500" stopOpacity="1" />
-        <stop offset="100%" stopCsolor="#ff2200" stopOpacity="1" />
+        <stop offset="100%" stopColor="#ff2200" stopOpacity="1" />
       </linearGradient>
     </defs>
     <circle className={classname("main")} cx="21.5" cy="21.5" r="21" />
