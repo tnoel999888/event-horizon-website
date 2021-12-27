@@ -108,9 +108,10 @@ function Contact() {
 
         <form className="form" method="POST" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label className={classname("form-label")} htmlFor="name">Name:</label>
+            <label className={classname("form-label")} htmlFor="name-input">Name:</label>
             <input
-              id="name"
+              id="name-input"
+              data-testid="name-input"
               type="text"
               className="form-control"
               value={formDetails.name}
@@ -119,9 +120,10 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <label className={classname("form-label")} htmlFor="exampleInputEmail1">Email address:</label>
+            <label className={classname("form-label")} htmlFor="email-address-input">Email address:</label>
             <input
-              id="exampleInputEmail1"
+              id="email-address-input"
+              data-testid="email-address-input"
               type="email"
               className="form-control"
               aria-describedby="emailHelp"
@@ -131,8 +133,10 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <label className={classname("form-label")} htmlFor="message">Message:</label>
+            <label className={classname("form-label")} htmlFor="message-input">Message:</label>
             <textarea
+              id="message-input"
+              data-testid="message-input"
               className="form-control"
               rows="5"
               value={formDetails.message}
