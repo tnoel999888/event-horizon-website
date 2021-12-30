@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import { navigationItemsUrls } from "./Navigation/consts";
-import Header from "./Header";
+import { navigationItemsUrls } from "../Navigation/consts";
+import Header from "../Header";
 
 test("Renders expected content on Home page", () => {
   const { container } = render(
