@@ -17,4 +17,22 @@ const navigationItems = [
   },
 ];
 
-export default navigationItems;
+const navigationItemsLabels = navigationItems.reduce(
+  (obj, item) => (
+    {
+      ...obj,
+      [item.label]: item.label,
+    }
+  ), {},
+);
+
+const navigationItemsUrls = navigationItems.reduce(
+  (obj, item) => (
+    {
+      ...obj,
+      [item.label]: item.url,
+    }
+  ), {},
+);
+
+export { navigationItems, navigationItemsLabels, navigationItemsUrls };
