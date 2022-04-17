@@ -1,5 +1,13 @@
 const songs = [
   {
+    id: 1203528280,
+    channelUrl: "https://soundcloud.com/drinksonmemusic",
+    channelTitle: "Drinks On Me",
+    songUrl: "https://soundcloud.com/drinksonmemusic/highcalibervip",
+    songTitle: "Drinks On Me & Event Horizon - High Caliber (VIP)",
+    artworkUrl: "https://i1.sndcdn.com/artworks-ciH3qiDS08LBQrXi-E0r3oQ-t500x500.jpg",
+  },
+  {
     id: 1163064409,
     channelUrl: "https://soundcloud.com/wubclubofficial",
     channelTitle: "The Wub Club",
