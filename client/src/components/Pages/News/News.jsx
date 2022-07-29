@@ -1,59 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { CircularProgress } from "@material-ui/core";
 import { block } from "bem-cn";
+import PropTypes from "prop-types";
 import { getMediaIcon, getMediaAlt } from "./consts";
-import fetchInstaFeed from "../../../api/instagram";
 import "./news.scss";
 
 const classname = block("news");
 
-function News() {
+function News({
+  mediaData, getInstaData, showMoreButtonVisible, dataLoading,
+}) {
   const [hoverCaption, setHoverCaption] = useState("");
   const [hoverIndex, setHoverIndex] = useState(null);
-  const [mediaData, setMediaData] = useState([]);
-  const [afterQueryParam, setAfterQueryParam] = useState("");
-  const [showMoreButtonVisible, setShowMoreButtonVisible] = useState(true);
-  const [dataLoading, setDataLoading] = useState(true);
-
-  async function getInstaData() {
-    setDataLoading(true);
-
-    let newMediaData = [];
-    const data = await fetchInstaFeed(afterQueryParam);
-
-    if (data) {
-      const dataJson = JSON.parse(data).json;
-      if (dataJson) {
-        const dataObj = JSON.parse(dataJson);
-        if (dataObj) {
-          newMediaData = [...mediaData].concat(dataObj.data);
-
-          setMediaData(newMediaData);
-          setDataLoading(false);
-
-          if (
-            dataObj
-            && dataObj.paging
-            && dataObj.paging.next
-          ) {
-            setAfterQueryParam(dataObj.paging.cursors.after);
-          } else {
-            setShowMoreButtonVisible(false);
-          }
-        }
-      }
-    }
-  }
-
-  useEffect(() => {
-    getInstaData();
-
-    const interval = setInterval(async () => {
-      getInstaData();
-    }, 600000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className={classname()}>
@@ -114,5 +72,18 @@ function News() {
     </div>
   );
 }
+
+News.propTypes = {
+  mediaData: PropTypes.arrayOf(PropTypes.shape({
+    caption: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    media_type: PropTypes.string.isRequired,
+    media_url: PropTypes.string.isRequired,
+    permalink: PropTypes.string.isRequired,
+  })).isRequired,
+  getInstaData: PropTypes.func.isRequired,
+  showMoreButtonVisible: PropTypes.bool.isRequired,
+  dataLoading: PropTypes.bool.isRequired,
+};
 
 export default News;

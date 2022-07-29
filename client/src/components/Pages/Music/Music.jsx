@@ -71,24 +71,26 @@ function Music() {
 
   return (
     <div className={classname()}>
-      {songs.map((song, index) => (
-        <div className={classname("song")} key={song.songUrl}>
-          <div className={classname("song-media-container")}>
-            { playClicked.includes(index) ? renderIframe(song) : renderDummyIframe(song, index)}
+      <div className={classname("feed")}>
+        {songs.map((song, index) => (
+          <div className={classname("song")} key={song.songUrl}>
+            <div className={classname("song-media-container")}>
+              { playClicked.includes(index) ? renderIframe(song) : renderDummyIframe(song, index)}
+            </div>
+            <div className={classname("song-details")}>
+              <a
+                href={song.songUrl}
+                className={classname("artist-and-song-name")}
+                title={song.songTitle}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {song.songTitle}
+              </a>
+            </div>
           </div>
-          <div className={classname("song-details")}>
-            <a
-              href={song.songUrl}
-              className={classname("artist-and-song-name")}
-              title={song.songTitle}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {song.songTitle}
-            </a>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
