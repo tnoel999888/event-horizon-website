@@ -1,5 +1,21 @@
 const songs = [
   {
+    id: 1289029348,
+    channelUrl: "https://soundcloud.com/nightbassrecords",
+    channelTitle: "Night Bass",
+    songUrl: "https://soundcloud.com/nightbassrecords/event-horizon-orca",
+    songTitle: "Event Horizon - Orca",
+    artworkUrl: "https://i1.sndcdn.com/artworks-sly3rpbyBTLsb5eL-z0M7rg-t500x500.jpg",
+  },
+  {
+    id: 1289029321,
+    channelUrl: "https://soundcloud.com/nightbassrecords",
+    channelTitle: "Night Bass",
+    songUrl: "https://soundcloud.com/nightbassrecords/event-horizon-freaky",
+    songTitle: "Event Horizon - Freaky",
+    artworkUrl: "https://i1.sndcdn.com/artworks-sly3rpbyBTLsb5eL-z0M7rg-t500x500.jpg",
+  },
+  {
     id: 1203528280,
     channelUrl: "https://soundcloud.com/drinksonmemusic",
     channelTitle: "Drinks On Me",

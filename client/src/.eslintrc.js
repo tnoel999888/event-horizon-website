@@ -4,6 +4,9 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     "plugin:react/recommended",
     "airbnb",
   ],

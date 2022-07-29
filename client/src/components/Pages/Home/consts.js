@@ -2,7 +2,7 @@ const carouselItems = [
   {
     className: "press-shot-3",
     header: "About:",
-    description: "25 year old DJ/Producer based in London, UK. Tech House/UK Bass/Lofi House/Garage/Drum & Bass/Dubstep.",
+    description: "DJ/Producer based in London, UK. Tech House/UK Bass/Lofi House/Garage/Drum & Bass/Dubstep.",
   },
   {
     className: "press-shot-1",

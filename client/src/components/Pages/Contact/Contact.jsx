@@ -16,11 +16,11 @@ function Contact() {
   const [emailStatus, setEmailStatus] = useState(EMAIL_STATUS.SUBMIT.key);
   const updateFormDetails = (key, value) => setFormDetails({ ...formDetails, [key]: value });
 
-  function resetForm() {
+  const resetForm = () => {
     setFormDetails(initialFormDetails);
-  }
+  };
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setEmailStatus(EMAIL_STATUS.SENDING.key);
 
@@ -33,30 +33,30 @@ function Contact() {
         setEmailStatus(EMAIL_STATUS.FAILED.key);
       }
     });
-  }
+  };
+
+  const anyDetailIsEmpty = Object.values(formDetails).some((detail) => detail === "");
+
+  const validEmail = (email) => {
+    const lastAtPos = email.lastIndexOf("@");
+    const lastDotPos = email.lastIndexOf(".");
+
+    return lastAtPos < lastDotPos
+           && lastAtPos > 0
+           && email.indexOf("@@") === -1
+           && lastDotPos > 2
+           && (email.length - lastDotPos) > 2;
+  };
 
   useEffect(() => {
-    if (formDetails.name === "" || formDetails.email === "" || formDetails.message === "") {
+    if (anyDetailIsEmpty) {
       setFormValid(false);
-    } else if (formDetails.email !== "") {
-      const lastAtPos = formDetails.email.lastIndexOf("@");
-      const lastDotPos = formDetails.email.lastIndexOf(".");
-
-      if (!(
-        lastAtPos < lastDotPos
-          && lastAtPos > 0
-          && formDetails.email.indexOf("@@") === -1
-          && lastDotPos > 2
-          && (formDetails.email.length - lastDotPos) > 2)
-      ) {
-        setFormValid(false);
-      } else {
-        setFormValid(true);
-      }
+    } else if (!validEmail(formDetails.email)) {
+      setFormValid(false);
     } else {
       setFormValid(true);
     }
-  }, [formDetails]);
+  }, [formDetails, anyDetailIsEmpty]);
 
   const submitRenderer = (
     <button

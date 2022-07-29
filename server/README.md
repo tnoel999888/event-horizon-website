@@ -1,7 +1,7 @@
 # event-horizon-website-backend
 The backend Nodejs email/Instagram API server for my Event Horizon website.
 
-A `.env` file is required with the Instagram access token:
+A `.env` file is required with the Instagram access token and email username & password:
 ```
 INSTAGRAM_ACCESS_TOKEN=insert_token_here
 EMAIL_USERNAME=insert_email_username_here
