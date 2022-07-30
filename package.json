@@ -8,8 +8,13 @@
     "start": "cd server && npm install && npm run start",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "start-server:local": "cd server && npm run start",
-    "start-client:local": "cd client && npm run start"
+    "start-client:local": "cd client && npm run start",
+    "precommit-msg": "echo 'Running pre-commit tests...' && exit 0"
   },
+  "pre-commit": [
+    "precommit-msg",
+    "test"
+  ],
   "engines": {
     "node": "14.17.0"
   },
@@ -23,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/tnoel999888/event-horizon-website/issues"
   },
-  "homepage": "https://github.com/tnoel999888/event-horizon-website#readme"
+  "homepage": "https://github.com/tnoel999888/event-horizon-website#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
 }
