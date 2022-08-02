@@ -67,7 +67,12 @@ function News({
             </button>
           </div>
         )}
-        { dataLoading && <CircularProgress size="2rem" /> }
+        { dataLoading
+          && (
+            <span className={classname("loading-spinner")}>
+              <CircularProgress size="2rem" />
+            </span>
+          )}
       </div>
     </div>
   );

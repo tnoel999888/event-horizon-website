@@ -33,6 +33,7 @@ module.exports = {
     "no-multi-spaces": ["error"],
     "import/no-named-as-default": 0,
     "import/no-named-as-default-member": 0,
+    "no-plusplus": 0,
     "jsx-a11y/label-has-associated-control": ["error", {
       required: {
         some: ["nesting", "id"],
